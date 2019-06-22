@@ -7,6 +7,7 @@ extern RentalForm rentalForm;
 int main(int args, char* argb[])
 {
 	initArray();
+	printHeader();
 	toString();
 	addVehicleToForm();
 	toString();

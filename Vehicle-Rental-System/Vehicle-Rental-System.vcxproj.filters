@@ -24,10 +24,10 @@
     <ClInclude Include="RentalForm.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="checkSecurity.h">
+    <ClInclude Include="InitData.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="InitData.h">
+    <ClInclude Include="CheckSecurity.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClCompile Include="RentalForm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="checkSecurity.cpp">
+    <ClCompile Include="InitData.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="InitData.cpp">
+    <ClCompile Include="CheckSecurity.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
