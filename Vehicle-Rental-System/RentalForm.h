@@ -24,4 +24,6 @@ void toString();
 // 接受一个订单号输入实现还车
 void returnVehicke();
 
+void modifyImformation(int Point);
+
 #endif // !VEHICLE_RENTAL_SYSTEM_RENTALFORM_H

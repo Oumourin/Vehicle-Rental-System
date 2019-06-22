@@ -87,3 +87,8 @@ void returnVehicke()
 		cout << "Î´ÕÒµ½¸Ã¶©µ¥£¡" << endl;
 	}
 }
+
+void modifyImformation(int Point)
+{
+
+}

@@ -45,3 +45,31 @@ void findRentByPlateNumber()
 	cout << "车牌号" << "     " << "营业额" << endl;
 	cout << getPlateNumber << "    " << getTurnove << endl;
 }
+
+int modifyRentalRocord()
+{
+	string getId;
+	cout << "输入要查找的身份证号：";
+	cin >> getId;
+	while (!checkIdentifyNumber(getId))
+	{
+		cout << "输入错误！重新输入：";
+		cin >> getId;
+	}
+	for (int i = 0; i < rentalForm.arraySize; i++)
+	{
+		if (rentalForm.vehicles[i].identifyNumber == getId)
+		{
+			toString(rentalForm.vehicles[i]);
+			cout << "是否要修改该条信息？Y/N";
+			char flag = getchar();
+			getchar();
+			if (flag == 'y' || flag == 'Y')
+			{
+				return i;
+			}
+		}
+	}
+	cout << "已经找完所有记录！"<<endl;
+	return -1;
+}
