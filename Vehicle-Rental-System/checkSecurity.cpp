@@ -74,9 +74,10 @@ bool isVehiclePlateNumber(string vehiclePlateNumber)
 	{
 		return false;
 	}
-	if (!isAllNumber(vehiclePlateNumber.substr(2)))
-	{
-		return false;
-	}
+	//  车牌有后面为非数字情况
+	//if (!isAllNumber(vehiclePlateNumber.substr(2)))
+	//{
+	//	return false;
+	//}
 	return true;
 }

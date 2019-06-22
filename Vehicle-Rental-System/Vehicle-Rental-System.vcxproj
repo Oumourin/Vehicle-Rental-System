@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="checkSecurity.h" />
+    <ClInclude Include="InitData.h" />
+    <ClInclude Include="RentalForm.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Vehicle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="checkSecurity.cpp" />
+    <ClCompile Include="InitData.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RentalForm.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{903E11FD-C6AA-462C-B993-DB8576B48212}</ProjectGuid>
@@ -150,9 +165,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Vehicle-Rental-System.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

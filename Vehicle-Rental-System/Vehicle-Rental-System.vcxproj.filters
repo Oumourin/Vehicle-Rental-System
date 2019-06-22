@@ -15,7 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Vehicle-Rental-System.cpp">
+    <ClInclude Include="Vehicle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RentalForm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="checkSecurity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InitData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Vehicle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RentalForm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="checkSecurity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitData.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
