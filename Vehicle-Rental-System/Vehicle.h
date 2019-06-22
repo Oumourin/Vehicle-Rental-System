@@ -23,9 +23,12 @@ struct Vehicle
 	Vehicle(string _orderNumber, string _identifyNumber, string _licensePlateNumber); 
 	//  供数组初始化用
 	Vehicle();
+	// 建立测试数据用
+	Vehicle(string _orderNumber, string _identifyNumber, string _licensePlateNumber, double _vehicleRent);
 };
 
 void toString(Vehicle vehicle);
+
 
 #endif // !VEHICLE_RENTAL_SYSTEM_VEHICLE_H
 

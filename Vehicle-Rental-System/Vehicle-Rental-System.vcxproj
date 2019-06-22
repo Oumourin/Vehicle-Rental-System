@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckSecurity.h" />
+    <ClInclude Include="FindFunction.h" />
     <ClInclude Include="InitData.h" />
     <ClInclude Include="RentalForm.h" />
     <ClInclude Include="UI.h" />
@@ -27,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CheckSecurity.cpp" />
+    <ClCompile Include="FindFunction.cpp" />
     <ClCompile Include="InitData.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RentalForm.cpp" />

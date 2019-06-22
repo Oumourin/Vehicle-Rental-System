@@ -61,3 +61,29 @@ void toString()
 		toString(rentalForm.vehicles[i]);
 	}
 }
+
+void returnVehicke()
+{
+	cout << "输入要登记归还的订单号：" << endl;
+	string getOrderNumber;
+	cin >> getOrderNumber;
+	// 标记是否找到订单
+	bool getFlag = false;
+	for (int i = 0; i < rentalForm.arraySize; i++)
+	{
+		if (getOrderNumber == rentalForm.vehicles[i].orderNumber)
+		{
+			cout << "请输入车辆租金：";
+			double getRent;
+			cin >> getRent;
+			rentalForm.vehicles[i].vehicleRent = getRent;
+			cout << "还车成功！" << endl;
+			getFlag = true;
+			break;
+		}
+	}
+	if (!getFlag)
+	{
+		cout << "未找到该订单！" << endl;
+	}
+}

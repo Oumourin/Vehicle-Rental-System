@@ -16,7 +16,17 @@ Vehicle::Vehicle()
 	vehicleRent = 0.0;
 }
 
+Vehicle::Vehicle(string _orderNumber, string _identifyNumber, string _licensePlateNumber, double _vehicleRent)
+{
+	orderNumber = _orderNumber;
+	identifyNumber = _identifyNumber;
+	licensePlateNumber = _licensePlateNumber;
+	vehicleRent = _vehicleRent;
+}
+
 void toString(Vehicle vehicle)
 {
 	cout << vehicle.orderNumber << "    " << vehicle.identifyNumber << "    " << vehicle.licensePlateNumber << "    " << vehicle.vehicleRent << endl;
 }
+
+
