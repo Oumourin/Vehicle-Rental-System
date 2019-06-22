@@ -8,5 +8,7 @@ int main(int args, char* argb[])
 {
 	initArray();
 	toString();
+	addVehicleToForm();
+	toString();
 	return 0;
 }
