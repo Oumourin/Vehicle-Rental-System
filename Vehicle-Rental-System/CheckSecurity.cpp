@@ -57,7 +57,7 @@ bool checkVehiclePlateNumberLength(string vehiclePlateNumber)
 
 bool isVehiclePlateNumber(string vehiclePlateNumber)
 {
-	string templateChar = "¾©½ò½ú¼½ÃÉÁÉ¼ªºÚ»¦ËÕÕãÍîÃö¸ÓÂ³Ô¥¶õÏæÔÁ¹ğÇíÓå´¨¹óÔÆ²ØÉÂ¸ÊÇàÄşĞÂ";
+	string templateChar = "äº¬æ´¥æ™‹å†€è’™è¾½å‰é»‘æ²ªè‹æµ™çš–é—½èµ£é²è±«é„‚æ¹˜ç²¤æ¡‚ç¼æ¸å·è´µäº‘è—é™•ç”˜é’å®æ–°";
 	bool checkFlag = false;
 	for (int i = 0; i < templateChar.length(); i++)
 	{
@@ -74,7 +74,7 @@ bool isVehiclePlateNumber(string vehiclePlateNumber)
 	{
 		return false;
 	}
-	//  ³µÅÆÓĞºóÃæÎª·ÇÊı×ÖÇé¿ö
+	//  è½¦ç‰Œæœ‰åé¢ä¸ºéæ•°å­—æƒ…å†µ
 	//if (!isAllNumber(vehiclePlateNumber.substr(2)))
 	//{
 	//	return false;
