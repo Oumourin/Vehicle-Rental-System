@@ -4,20 +4,20 @@
 #include<ctype.h>
 
 
-// ¼ì²éÊı×éÊÇ·ñÒç³ö
+// æ£€æŸ¥æ•°ç»„æ˜¯å¦æº¢å‡º
 bool checkOverflow();
 
-// ¼ì²é¶©µ¥ºÅÊÇ·ñÎª10Î»
+// æ£€æŸ¥è®¢å•å·æ˜¯å¦ä¸º10ä½
 bool checkOrderNumber(string orderNumber);
 
-// ¼ì²éÉí·İÖ¤ºÅ³¤¶È
+// æ£€æŸ¥èº«ä»½è¯å·é•¿åº¦
 bool checkIdentifyNumber(string identifyNumber);
 
-// ¼ì²éÉí·İÖ¤ºÅÊÇ·ñÓĞ·Ç·¨×Ö·û
+// æ£€æŸ¥èº«ä»½è¯å·æ˜¯å¦æœ‰éæ³•å­—ç¬¦
 bool isAllNumber(string inputString);
 
-// ¼ì²é³µÅÆ³¤¶È
+// æ£€æŸ¥è½¦ç‰Œé•¿åº¦
 bool checkVehiclePlateNumberLength(string vehiclePlateNumber);
 
-//  ¼ì²é³µÅÆºÏ·¨ĞÔ
+//  æ£€æŸ¥è½¦ç‰Œåˆæ³•æ€§
 bool isVehiclePlateNumber(string vehiclePlateNumber);
