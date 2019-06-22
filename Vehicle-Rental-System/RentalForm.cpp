@@ -36,7 +36,7 @@ void addVehicleToForm()
 	}
 	cout << "请输入车牌号：";
 	cin >> licensePlateNumber;
-	while (!checkVehiclePlateNumberLength(licensePlateNumber)&&isVehiclePlateNumber(licensePlateNumber))
+	while (!(checkVehiclePlateNumberLength(licensePlateNumber)&&isVehiclePlateNumber(licensePlateNumber)))
 	{
 		cout << "输入错误！请重新输入：";
 		cin >> licensePlateNumber;
