@@ -136,3 +136,21 @@ void modifyImformation(int Point)
 	printHeader();
 	toString(rentalForm.vehicles[Point]);
 }
+
+void deleteRentalRecord(int Point)
+{
+	if (Point == -1)
+	{
+		cout << "未找到相关信息！" << endl;
+		return;
+	}
+	// 用于打印删除信息用
+	Vehicle vehicle(rentalForm.vehicles[Point].orderNumber, rentalForm.vehicles[Point].identifyNumber, rentalForm.vehicles[Point].licensePlateNumber, rentalForm.vehicles[Point].vehicleRent);
+	for (int i = Point; i < rentalForm.arraySize-1; i++)
+	{
+		rentalForm.vehicles[i] = rentalForm.vehicles[i+1];
+		rentalForm.arraySize--;
+	}
+	cout << "删除成功！删除记录如下：" << endl;
+	toString(vehicle);
+}
