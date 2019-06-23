@@ -42,6 +42,14 @@ void addVehicleToForm()
 	//	cout << "输入错误！请重新输入：";
 	//	cin >> licensePlateNumber;
 	//}
+	for (int i = 0; i < rentalForm.arraySize; i++)
+	{
+		if (rentalForm.vehicles[i].orderNumber == orderNumber)
+		{
+			cout << "已存在该订单！" << endl;
+			return;
+		}
+	}
 	addVehicleToForm(Vehicle(orderNumber, identifyNum, licensePlateNumber));
 	cout << "添加成功！信息如下：" << endl;
 	printHeader();
@@ -73,6 +81,11 @@ void returnVehicke()
 	{
 		if (getOrderNumber == rentalForm.vehicles[i].orderNumber)
 		{
+			if (rentalForm.vehicles[i].vehicleRent != 0.0)
+			{
+				cout << "该订单已经归还！" << endl;
+				return;
+			}
 			cout << "请输入车辆租金：";
 			double getRent;
 			cin >> getRent;

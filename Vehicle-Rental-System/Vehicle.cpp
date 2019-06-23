@@ -1,5 +1,7 @@
 #include "Vehicle.h"
 
+
+
 Vehicle::Vehicle(string _orderNumber, string _identifyNumber, string _licensePlateNumber)
 {
 	orderNumber = _orderNumber;

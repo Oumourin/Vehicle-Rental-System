@@ -7,13 +7,16 @@ extern RentalForm rentalForm;
 
 int main(int args, char* argb[])
 {
-	initArray();
 	welcomeUI();
-	menuUI();
-	// printHeader();
-	//toString();
-	////modifyImformation(modifyRentalRocord());
-	//deleteRentalRecord(modifyRentalRocord());
-	//toString();
-	return 0;
+	getchar();
+	system("cls");
+	while (true)
+	{
+		initArray();
+		menuUI();
+		menuChoice();
+		cout << "请按任意键继续...........";
+		getchar();
+		system("cls");
+	}
 }

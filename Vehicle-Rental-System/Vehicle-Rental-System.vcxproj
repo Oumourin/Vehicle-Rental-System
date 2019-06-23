@@ -23,6 +23,7 @@
     <ClInclude Include="FindFunction.h" />
     <ClInclude Include="InitData.h" />
     <ClInclude Include="RentalForm.h" />
+    <ClInclude Include="StatisticsFunction.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="Vehicle.h" />
   </ItemGroup>
@@ -32,6 +33,7 @@
     <ClCompile Include="InitData.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RentalForm.cpp" />
+    <ClCompile Include="StatisticsFunction.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
@@ -105,7 +107,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
