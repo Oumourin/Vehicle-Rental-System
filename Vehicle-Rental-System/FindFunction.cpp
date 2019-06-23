@@ -62,9 +62,10 @@ int modifyRentalRocord()
 		{
 			toString(rentalForm.vehicles[i]);
 			cout << "是否要修改该条信息？Y/N";
-			char flag = getchar();
+			string flag;
+			cin >> flag;
 			getchar();
-			if (flag == 'y' || flag == 'Y')
+			if (flag == "y" || flag == "Y")
 			{
 				return i;
 			}

@@ -90,5 +90,49 @@ void returnVehicke()
 
 void modifyImformation(int Point)
 {
-
+	if (Point == -1)
+	{
+		cout << "未找到相关信息！" << endl;
+		return;
+	}
+	cout << "请根据提示输入要更改的信息：" << endl;
+	string orderNumber, identifyNumber, licensePlateNumber;
+	cout << "请输入要更改的订单号，不更改请输入#:";
+	cin >> orderNumber;
+	if (orderNumber != "#")
+	{
+		while (!checkOrderNumber(orderNumber))
+		{
+			cout << "输入错误!请重新输入:";
+			cin >> orderNumber;
+		}
+		rentalForm.vehicles[Point].orderNumber = orderNumber;
+	}
+	cout << "请输入要更改的身份证号,不更改请输入#：";
+	cin >> identifyNumber;
+	if (identifyNumber != "#")
+	{
+		while (!checkIdentifyNumber)
+		{
+			cout << "输入错误!请重新输入:";
+			cin >> identifyNumber;
+		}
+		rentalForm.vehicles[Point].identifyNumber = identifyNumber;
+	}
+	cout << "请输入要更改的车牌号,不修改请输入#：";
+	cin >> licensePlateNumber;
+	if (licensePlateNumber!="#")
+	{
+		rentalForm.vehicles[Point].licensePlateNumber = licensePlateNumber;
+	}
+	double rent;
+	cout<< "请输入要更改的租金,不修改请输入-1：";
+	cin >> rent;
+	if (rent!=-1)
+	{
+		rentalForm.vehicles[Point].vehicleRent = rent;
+	}
+	cout << "修改完成，修改信息如下：" << endl;
+	printHeader();
+	toString(rentalForm.vehicles[Point]);
 }

@@ -10,10 +10,7 @@ int main(int args, char* argb[])
 	initArray();
 	printHeader();
 	toString();
-	addVehicleToForm();
-	returnVehicke();
+	modifyImformation(modifyRentalRocord());
 	toString();
-	findRentalRecordById();
-	findRentByPlateNumber();
 	return 0;
 }
