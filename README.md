@@ -215,3 +215,20 @@ void statisticalTotalIncomeByPlateNumber();
 
 实现对最高收入车辆的统计
 
+###  UI相关函数
+
+函数定义
+
+```C++
+void printHeader();
+
+void welcomeUI();
+
+void menuUI();
+
+void menuChoice();
+```
+
+函数功能
+
+UI打印和UI相关控制逻辑
