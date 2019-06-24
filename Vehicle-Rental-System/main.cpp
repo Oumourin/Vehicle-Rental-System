@@ -6,13 +6,13 @@
 extern RentalForm rentalForm;
 
 int main(int args, char* argb[])
-{
+{		
+	initArray();
 	welcomeUI();
 	getchar();
 	system("cls");
 	while (true)
 	{
-		initArray();
 		menuUI();
 		menuChoice();
 		cout << "请按任意键继续...........";

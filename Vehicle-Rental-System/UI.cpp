@@ -50,6 +50,7 @@ void menuChoice()
 		exit(0);
 	case 1:
 		addVehicleToForm();
+		getchar();
 		break;
 	case 2:
 		printHeader();
